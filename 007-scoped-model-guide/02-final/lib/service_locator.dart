@@ -1,0 +1,19 @@
+import 'package:get_it/get_it.dart';
+import 'package:scoped_guide/scoped_models/error_model.dart';
+import 'package:scoped_guide/scoped_models/home_model.dart';
+import 'package:scoped_guide/scoped_models/success_model.dart';
+import 'package:scoped_guide/services/storage_service.dart';
+
+
+//Get_iT을 통해서 모델과 서비스를 한 곳에 모음. 
+GetIt locator = GetIt(); 
+
+void setupLocator() {
+  // register services
+  locator.registerLazySingleton<StorageService>(() => StorageService());
+
+  // register models
+  locator.registerFactory<HomeModel>(() => HomeModel());
+  locator.registerFactory<ErrorModel>(() => ErrorModel());
+  locator.registerFactory<SuccessModel>(() => SuccessModel());
+}
