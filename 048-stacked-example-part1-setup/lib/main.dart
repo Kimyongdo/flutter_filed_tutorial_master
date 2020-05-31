@@ -5,10 +5,11 @@ import 'package:stacked_services/stacked_services.dart';
 import 'app/router.gr.dart';
 
 void main() {
-  setupLocator();//get_it 라이브러리 - runApp이 시작하기 전에 먼저 호출
+  setupLocator(); //get_it 라이브러리 - runApp이 시작하기 전에 먼저 호출
   runApp(MyApp());
 }
 
+//Main은 어떤 view를 보여줄까를 예고함. 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

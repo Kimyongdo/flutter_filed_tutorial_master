@@ -19,3 +19,9 @@ class StartupView extends StatelessWidget {
     );
   }
 }
+
+//VM이름 짓는게 매우 매우 중요하다
+// get set를 기준으로 짓기
+// void getCode(String name){
+// get 
+// }

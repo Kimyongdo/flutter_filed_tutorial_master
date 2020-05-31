@@ -23,6 +23,7 @@ class Router extends RouterBase {
 
   @override
   Route<dynamic> onGenerateRoute(RouteSettings settings) {
+    
     final args = settings.arguments;
     switch (settings.name) {
       case Routes.startupViewRoute: //startupViewRoute라면. 
